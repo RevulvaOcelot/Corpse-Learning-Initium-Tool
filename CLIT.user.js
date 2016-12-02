@@ -15,7 +15,7 @@ const ver = "scraperdata001";
     $(document).ready(function() {
 
         setTimeout(function() {
-            $('.main-description').append("<br/><a id='scraperexport' style='font-size: small;' href='#'>export mob data</a>");
+            $('.main-description').first().append("<br/><a id='scraperexport' style='font-size: small;' href='#'>export mob data</a>");
             $("#inline-characters").children().children("h4").append("<br/><a id='scraper' style='font-size: small;' href='#'>scrape</a> - <a id='scraperexport' style='font-size: small;' href='#'>export</a>");
 
             $("#scraperexport").on("click", function(e) {
