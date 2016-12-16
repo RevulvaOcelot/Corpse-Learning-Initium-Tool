@@ -60,7 +60,7 @@ function getCorpseData() {
             mobdata.hp = parseInt(mobdata.hp);
             $(".main-item-subnote", res).each(function(k, e) {
                 var ename = $(e).attr("name");
-                mobdata[ename] = parseInt($(e).text().split(" ")[0]);
+                mobdata[ename] = parseFloat($(e).text().split(" ")[0]);
             });
             var eqs = {};
             $(".main-item-name", res).each(function(k, e) {
